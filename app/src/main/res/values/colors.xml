@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#69aaff</color>
+    <color name="color_primary">#007CFF</color>
+    <color name="color_primary_variant">#0051cb</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="splash_screen_bg">#007CFF</color>
+    <color name="app_bg">#070818</color>
+    <color name="movie_card_bg">#1B1C2A</color>
+    <color name="movie_card_top_rated_bg">#007CFF</color>
+
+    <color name="rating_stars">#FFB825</color>
+    <color name="rating_stars_normal">#252634</color>
+    <color name="rating_stars_top">#1F8CFF</color>
+
+    <color name="secondary_txt">#CCE5FF</color>
+    
+</resources>

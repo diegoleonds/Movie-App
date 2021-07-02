@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MoviesAPI</string>
+    <string name="movies_list_title">Top Movies</string>
+    <string name="movie_cv_top">Top movie this week</string>
+
+
+    <string name="lore_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna sit amet purus gravida
+        quis. Porta nibh venenatis cras sed felis eget velit. Non enim praesent elementum facilisis
+        leo. Dui sapien eget mi proin sed libero enim sed faucibus. Urna duis convallis convallis
+        tellus id interdum velit laoreet. Pharetra convallis posuere morbi leo urna molestie.
+        Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Viverra suspendisse
+        potenti nullam ac. Dapibus ultrices in iaculis nunc sed. Interdum posuere lorem ipsum dolor.
+        Consectetur lorem donec massa sapien faucibus. Congue eu consequat ac felis donec et odio.
+        Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</string>
+    <string name="movie_info_rv_title">Also Trending</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cloud_network_error">Can\'t get data from the cloud</string>
+    <string name="top_movie_of_the_week">Top movie of the week</string>
+    <string name="network_error">Network error</string>
+    <string name="not_found_error">Not found</string>
+    <string name="access_denied_error">Access denied</string>
+    <string name="service_unavailable_error">Service unavailable</string>
+    <string name="unknown_error">Unknown error</string>
+</resources>

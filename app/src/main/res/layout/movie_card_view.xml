@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/movieCardView"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:backgroundTint="@color/movie_card_bg"
+        app:cardCornerRadius="8dp"
+        android:layout_gravity="center">
+    
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/movieCvImg"
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars"/>
+
+            <ImageView
+                android:id="@+id/movieCvTopIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="@id/movieCvTitleTxtView"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_il_goldmedal_small"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieCvTopTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/movieCvTopIcon"
+                app:layout_constraintTop_toTopOf="@id/movieCvTopIcon"
+                android:layout_marginStart="9dp"
+                android:textAppearance="@style/TopMovieTxt"
+                android:text="@string/movie_cv_top"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/movieCvTitleTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/movieCvImg"
+                app:layout_constraintTop_toBottomOf="@id/movieCvTopIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="16dp"
+                android:textAppearance="@style/Title.MovieTitle"
+                android:maxLines="2"
+                tools:text="Movie"/>
+
+            <TextView
+                android:id="@+id/movieCvGenreTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                app:layout_constraintTop_toBottomOf="@id/movieCvTitleTxtView"
+                app:layout_constraintStart_toStartOf="@id/movieCvTitleTxtView"
+                app:layout_constraintEnd_toEndOf="@id/movieCvTitleTxtView"
+                android:textAppearance="@style/SecondaryInfo"
+                tools:text="Fantasy / Action"/>
+
+            <TextView
+                android:id="@+id/movieReleaseYearTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/movieCvGenreTxtView"
+                app:layout_constraintTop_toBottomOf="@id/movieCvGenreTxtView"
+                android:textAppearance="@style/SecondaryInfo"
+                tools:text="2018"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/movieCvRatingLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/movieCvTitleTxtView"
+                android:layout_marginBottom="10dp"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/rating_normal_bg">
+
+                <RatingBar
+                    android:id="@+id/movieRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:isIndicator="true"/>
+
+                <TextView
+                    android:id="@+id/movieRatingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:textAppearance="@style/SecondaryInfo"
+                    android:maxLength="1"
+                    tools:text="0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/SecondaryInfo"
+                    android:text="/5"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </com.google.android.material.card.MaterialCardView>
+</androidx.appcompat.widget.LinearLayoutCompat>
